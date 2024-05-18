@@ -8,7 +8,7 @@
 </p>
 
 
-<p align="center">Simple description of what your project do or how to use it</p>
+<p align="center">My Pertamina is our fun project for testing our skill</p>
 
 
 <p align="center">
@@ -103,3 +103,5 @@ Learn more about deploying your application with the [documentations](https://vi
 USE: `Conventional Commits` for commit message
 
 Example: `feat: commit message` or `feat(spesific scope): commit message`
+
+<p>thanks for <a href="https://www.makeread.me">makeread.me</a> for this amazing README.md</p>
