@@ -104,4 +104,5 @@ USE: `Conventional Commits` for commit message
 
 Example: `feat: commit message` or `feat(spesific scope): commit message`
 
-<p>thanks for <a href="https://www.makeread.me">makeread.me</a> for this amazing README.md</p>
+<hr/>
+<p align="center">thanks for <a href="https://www.makeread.me">makeread.me</a> for this amazing README.md</p>
