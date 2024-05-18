@@ -7,6 +7,7 @@
 
 
 <p align="center">My Pertamina is our fun project for testing our skill</p>
+<p align="center">Titik Koma Squad;</p>
 
 
 <p align="center">
