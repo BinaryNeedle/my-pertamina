@@ -64,7 +64,7 @@ How to start your project
 ## Usage
 
 ```bash
-npm install # or pnpm install or yarn install
+npm install
 ```
 
 ### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
