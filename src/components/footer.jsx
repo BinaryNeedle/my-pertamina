@@ -1,5 +1,5 @@
 export default () => (
 	<>
-		<h1>this is navbar</h1>
+		<footer>this is Footer</footer>
 	</>
 );

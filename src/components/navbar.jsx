@@ -1,5 +1,5 @@
 export default () => (
 	<>
-		<h1>this is navbar</h1>
+		<nav>this is Navbar</nav>
 	</>
 );

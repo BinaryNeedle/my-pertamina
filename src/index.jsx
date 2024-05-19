@@ -1,19 +1,20 @@
 /* @refresh reload */
+import { lazy } from "solid-js";
 import { render } from "solid-js/web";
 import { Router, Route } from "@solidjs/router";
 
 import "./assets/css/index.css";
 import App from "./App";
-import Home from "./pages/home";
-import Testing from "./pages/testing";
-import NotFound from "./pages/notFound";
+const Login = lazy(() => import("./pages/login"));
+const Testing = lazy(() => import("./pages/testing"));
+const NotFound = lazy(() => import("./pages/notFound"));
 
 const root = document.getElementById("root");
 
 render(
 	() => (
 		<Router root={App}>
-			<Route path="/" component={Home} />
+			<Route path="/" component={Login} />
 			<Route path="/testing" component={Testing} />
 			<Route path="/*404" component={NotFound} />
 		</Router>

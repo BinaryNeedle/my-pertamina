@@ -1,5 +1,5 @@
 export default () => (
 	<>
-		<h1>this is Home page</h1>
+		<h1>this is Login page</h1>
 	</>
 );
