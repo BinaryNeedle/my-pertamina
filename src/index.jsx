@@ -17,7 +17,7 @@ render(
 			<Route path="/" component={Login} />
 			<Route path="/testing" component={Testing} />
 			<Route path="/404" component={NotFound} />
-			<Route path="/*404" component={() => <Navigate href={"/404"} />} />
+			<Route path="/*" component={() => <Navigate href={"/404"} />} />
 		</Router>
 	),
 	root

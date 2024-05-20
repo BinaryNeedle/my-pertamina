@@ -4,18 +4,20 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
 const isNotFound = window.location.pathname === "/404";
-export default (props) => (
-	<>
-		<Show when={!isNotFound}>
-			<Navbar />
-		</Show>
-		<main className="container mx-auto">
+
+function App(props) {
+	return (
+		<>
+			<Show when={!isNotFound}>
+				<Navbar />
+			</Show>
 			{props.children}
-			{!isNotFound}
-			{window.location.pathname}
-		</main>
-		<Show when={!isNotFound}>
-			<Footer />
-		</Show>
-	</>
-);
+			{/* {window.location.pathname} */}
+			<Show when={!isNotFound}>
+				<Footer />
+			</Show>
+		</>
+	);
+}
+
+export default App;

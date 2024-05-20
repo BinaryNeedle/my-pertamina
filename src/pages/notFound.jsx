@@ -6,8 +6,13 @@ if (!localStorage.getItem("reloaded")) {
 	// If already reloaded, remove the flag from localStorage
 	localStorage.removeItem("reloaded");
 }
-export default () => (
-	<>
-		<h1>Pages Not Found (code: 404)</h1>
-	</>
-);
+
+function NotFound() {
+	return (
+		<>
+			<h1>Pages Not Found (code: 404)</h1>
+		</>
+	);
+}
+
+export default NotFound;
