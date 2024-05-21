@@ -82,20 +82,22 @@ function Login() {
 							{/* {{ csrf_field() }} */}
 
 							<div class="mb-3">
-								<label>E-Mail Address</label>
+								<label htmlFor="email">E-Mail Address</label>
 								<input
 									class="border w-full p-3 rounded-lg"
 									name="email"
 									type="text"
+									id="email"
 									placeholder="E-Mail"
 								/>
 							</div>
 							<div class="mb-6">
-								<label>Password</label>
+								<label htmlFor="password">Password</label>
 								<input
 									class="border w-full p-3 rounded-lg"
 									name="password"
 									type="password"
+									id="password"
 									placeholder="* * * * * * * * * *"
 								/>
 							</div>
@@ -106,7 +108,7 @@ function Login() {
 							</div>
 						</form>
 
-						<div class="border-t px-10 py-6">
+						<div class="border-t px-8 py-6">
 							<div class="flex justify-between">
 								<A
 									href="/signup"
@@ -114,7 +116,7 @@ function Login() {
 								>
 									Don't have an account?
 								</A>
-								<p> | </p>
+								<p className="px-2">|</p>
 								<A
 									href="/forgotpw"
 									class="text-grey-darkest hover:text-black no-underline"

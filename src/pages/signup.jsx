@@ -15,10 +15,10 @@ function Signup() {
 							<img src={pertaminaLogo} alt="Pertamina Logo" className="w-16" />
 						</span>
 						<div class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
-							Welcome back!
+							Welcome!
 						</div>
 						<div class="text-center mb-5 mt-3">
-							Please enter your details to sign in.
+							Please enter your details to sign up.
 						</div>
 						<div class="flex justify-center">
 							<button
@@ -79,22 +79,33 @@ function Signup() {
 
 						<form class="bg-grey-lightest py-3">
 							{/* {{ csrf_field() }} */}
-
 							<div class="mb-3">
-								<label>E-Mail Address</label>
+								<label htmlFor="name">Full Name</label>
+								<input
+									class="border w-full p-3 rounded-lg"
+									name="name"
+									type="text"
+									id="name"
+									placeholder="Enter your full name..."
+								/>
+							</div>
+							<div class="mb-3">
+								<label htmlFor="email">E-Mail Address</label>
 								<input
 									class="border w-full p-3 rounded-lg"
 									name="email"
 									type="text"
-									placeholder="E-Mail"
+									id="email"
+									placeholder="Enter your E-Mail..."
 								/>
 							</div>
 							<div class="mb-6">
-								<label>Password</label>
+								<label htmlFor="password">Password</label>
 								<input
 									class="border w-full p-3 rounded-lg"
 									name="password"
 									type="password"
+									id="password"
 									placeholder="* * * * * * * * * *"
 								/>
 							</div>
@@ -105,15 +116,13 @@ function Signup() {
 							</div>
 						</form>
 
-						<div class="border-t px-10 py-6">
-							<div class="flex justify-between">
-								<A
-									href="/"
-									class="font-bold text-primary hover:text-primary-dark no-underline"
-								>
-									Already have an account?
-								</A>
-							</div>
+						<div class="border-t px-24 py-6 flex justify-center">
+							<A
+								href="/"
+								class="font-bold text-primary hover:text-primary-dark no-underline"
+							>
+								Already have an account?
+							</A>
 						</div>
 					</div>
 				</div>
