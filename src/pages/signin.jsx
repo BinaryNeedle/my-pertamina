@@ -5,8 +5,6 @@ import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
 function Login() {
 	return (
 		<>
-			<div class="h-2 bg-primary"></div>
-
 			<div class="container mx-auto p-8 flex items-center h-screen">
 				<div class="mx-auto max-w-md">
 					{/* <!-- ... --> */}
