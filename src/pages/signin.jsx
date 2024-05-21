@@ -101,7 +101,7 @@ function Login() {
 							</div>
 							<div class="flex">
 								<button class="bg-black rounded-lg hover:bg-primary-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider">
-									Login
+									Sign in
 								</button>
 							</div>
 						</form>
@@ -109,14 +109,14 @@ function Login() {
 						<div class="border-t px-10 py-6">
 							<div class="flex justify-between">
 								<A
-									href="#"
+									href="/signup"
 									class="font-bold text-primary hover:text-primary-dark no-underline"
 								>
 									Don't have an account?
 								</A>
 								<p> | </p>
 								<A
-									href="#"
+									href="/forgotpw"
 									class="text-grey-darkest hover:text-black no-underline"
 								>
 									Forgot Password?
@@ -125,7 +125,6 @@ function Login() {
 						</div>
 					</div>
 				</div>
-				    
 			</div>
 		</>
 	);
