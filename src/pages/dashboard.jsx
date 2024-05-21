@@ -5,7 +5,7 @@ function ForgotPw() {
 	return (
 		<>
 			<div class="container mx-auto p-8 flex items-center h-screen">
-				<div class="mx-auto max-w-md">{/* <!-- ... --> */}</div>
+				<div class="mx-auto max-w-md"></div>
 			</div>
 		</>
 	);
