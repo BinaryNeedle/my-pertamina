@@ -6,8 +6,6 @@ function ResetPw() {
 		<>
 			<div class="container mx-auto p-8 flex items-center h-screen">
 				<div class="mx-auto max-w-md">
-					{/* <!-- ... --> */}
-
 					<div class="bg-gradient-to-b from-[#edf2f4] from-10% via-white via-30% to-white to-60% rounded-lg shadow p-7 border-4 border-x-white border-b-white border-t-[#edf2f4]">
 						<span className="flex justify-center pt-8">
 							<img src={pertaminaLogo} alt="Pertamina Logo" className="w-16" />
