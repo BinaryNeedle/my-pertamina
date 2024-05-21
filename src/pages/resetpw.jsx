@@ -1,7 +1,7 @@
 import { A } from "@solidjs/router";
 import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
 
-function ForgotPw() {
+function ResetPw() {
 	return (
 		<>
 			<div class="h-2 bg-primary"></div>
@@ -17,21 +17,33 @@ function ForgotPw() {
 						<div class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
 							Welcome!
 						</div>
-						<div class="text-center mb-5 mt-3">Please enter your email.</div>
+						<div class="text-center mb-5 mt-3">
+							Please enter your new password.
+						</div>
 						<div class="text-center mt-4 flex items-center">
 							<div class="border-t border-4 border-gray-400 flex-grow"></div>
 						</div>
 						<form class="bg-grey-lightest py-3">
 							{/* {{ csrf_field() }} */}
 
-							<div class="mb-6">
-								<label htmlFor="email">E-Mail Address</label>
+							<div class="mb-3">
+								<label htmlFor="password">Password</label>
 								<input
 									class="border w-full p-3 rounded-lg"
-									name="email"
-									type="text"
-									id="email"
-									placeholder="E-Mail"
+									name="password"
+									type="password"
+									id="password"
+									placeholder="* * * * * * * * * *"
+								/>
+							</div>
+							<div class="mb-6">
+								<label htmlFor="confirmPassword">Confirm Password</label>
+								<input
+									class="border w-full p-3 rounded-lg"
+									name="confirmPassword"
+									type="Password"
+									id="confirmPassword"
+									placeholder="* * * * * * * * * *"
 								/>
 							</div>
 							<div class="flex">
@@ -65,4 +77,4 @@ function ForgotPw() {
 	);
 }
 
-export default ForgotPw;
+export default ResetPw;
