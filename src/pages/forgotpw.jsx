@@ -1,6 +1,8 @@
 import { A } from "@solidjs/router";
 import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
-
+// remove navbar and footer display in css level
+document.getElementById("navbar").style.display = "none";
+document.getElementById("footer").style.display = "none";
 function ForgotPw() {
 	return (
 		<>

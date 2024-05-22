@@ -21,8 +21,7 @@ function App() {
 			<Route path="/forgotpw" component={ForgotPw} />
 			<Route path="/resetpw" component={ResetPw} />
 			<Route path="/testing" component={Testing} />
-			<Route path="/404" component={NotFound} />
-			<Route path="/*" component={() => <Navigate href={"/404"} />} />
+			<Route path="/*404" component={NotFound} />
 		</Router>
 	);
 }

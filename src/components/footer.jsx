@@ -1,7 +1,7 @@
 function Footer() {
 	return (
 		<>
-			<footer>this is Footer</footer>
+			<footer id="footer">this is Footer</footer>
 		</>
 	);
 }

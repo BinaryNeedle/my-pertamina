@@ -1,11 +1,6 @@
-if (!localStorage.getItem("reloaded")) {
-	// If not, reload the page and set the flag in localStorage
-	localStorage.setItem("reloaded", "true");
-	location.reload();
-} else {
-	// If already reloaded, remove the flag from localStorage
-	localStorage.removeItem("reloaded");
-}
+// remove navbar and footer display in css level
+document.getElementById("navbar").style.display = "none";
+document.getElementById("footer").style.display = "none";
 
 function NotFound() {
 	return (
