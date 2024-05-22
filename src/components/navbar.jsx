@@ -1,7 +1,9 @@
 function Navbar() {
 	return (
 		<>
-			<nav id="navbar">this is Navbar</nav>
+			<nav id="navbar" className="container mx-auto">
+				navbar
+			</nav>
 		</>
 	);
 }
