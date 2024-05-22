@@ -23,6 +23,10 @@ function App() {
 			<Route path="/testing" component={Testing} />
 			<Route path="/*404" component={NotFound} />
 		</Router>
+		// <Router>
+		// 	<Route path="/" component={() => <Navbar/> {Signin} <Footer/>)} />
+		// 	<Route path="/*404" component={() => {NotFound})} />
+		// </Router>
 	);
 }
 
