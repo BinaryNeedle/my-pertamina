@@ -1,14 +1,13 @@
-// remove navbar and footer display in css level
 import MainLayout from "../layouts/main";
 
 function NotFound() {
-  return (
-    <>
-      <MainLayout showNavbar={false} showFooter={false}>
-        <h1>Pages Not Found (code: 404)</h1>
-      </MainLayout>
-    </>
-  );
+	return (
+		<>
+			<MainLayout showNavbar={false} showFooter={false}>
+				<h1>Pages Not Found (code: 404)</h1>
+			</MainLayout>
+		</>
+	);
 }
 
 export default NotFound;
