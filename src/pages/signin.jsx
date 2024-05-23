@@ -7,21 +7,21 @@ document.getElementById("footer").style.display = "none";
 function Login() {
 	return (
 		<>
-			<div class="container mx-auto p-8 flex items-center h-screen">
-				<div class="mx-auto max-w-md">
+			<section class="container mx-auto p-8 flex items-center h-screen">
+				<section class="mx-auto max-w-md">
 					{/* <!-- ... --> */}
 
-					<div class="bg-gradient-to-b from-[#edf2f4] from-10% via-white via-30% to-white to-60% rounded-lg shadow p-7 border-4 border-x-white border-b-white border-t-[#edf2f4]">
+					<section class="bg-gradient-to-b from-[#edf2f4] from-10% via-white via-30% to-white to-60% rounded-lg shadow p-7 border-4 border-x-white border-b-white border-t-[#edf2f4]">
 						<span className="flex justify-center pt-8">
 							<img src={pertaminaLogo} alt="Pertamina Logo" className="w-16" />
 						</span>
-						<div class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
+						<section class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
 							Welcome back!
-						</div>
-						<div class="text-center mb-5 mt-3">
+						</section>
+						<section class="text-center mb-5 mt-3">
 							Please enter your details to sign in.
-						</div>
-						<div class="flex justify-center">
+						</section>
+						<section class="flex justify-center">
 							<button
 								type="button"
 								class="flex justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full py-3 mx-1 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -71,17 +71,17 @@ function Login() {
 									/>
 								</svg>
 							</button>
-						</div>
-						<div class="text-center mt-4 flex items-center">
-							<div class="border-t border-4 border-gray-400 flex-grow mr-3"></div>
+						</section>
+						<section class="text-center mt-4 flex items-center">
+							<section class="border-t border-4 border-gray-400 flex-grow mr-3"></section>
 							<p>OR</p>
-							<div class="ml-3 border-t border-4 border-gray-400 flex-grow"></div>
-						</div>
+							<section class="ml-3 border-t border-4 border-gray-400 flex-grow"></section>
+						</section>
 
 						<form class="bg-grey-lightest py-3">
 							{/* {{ csrf_field() }} */}
 
-							<div class="mb-3">
+							<section class="mb-3">
 								<label htmlFor="email">E-Mail Address</label>
 								<input
 									class="border w-full p-3 rounded-lg"
@@ -90,8 +90,8 @@ function Login() {
 									id="email"
 									placeholder="E-Mail"
 								/>
-							</div>
-							<div class="mb-6">
+							</section>
+							<section class="mb-6">
 								<label htmlFor="password">Password</label>
 								<input
 									class="border w-full p-3 rounded-lg"
@@ -100,16 +100,16 @@ function Login() {
 									id="password"
 									placeholder="* * * * * * * * * *"
 								/>
-							</div>
-							<div class="flex">
+							</section>
+							<section class="flex">
 								<button class="bg-black rounded-lg hover:bg-primary-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider">
 									Sign in
 								</button>
-							</div>
+							</section>
 						</form>
 
-						<div class="border-t px-8 py-6">
-							<div class="flex justify-between">
+						<section class="border-t px-8 py-6">
+							<section class="flex justify-between">
 								<A
 									href="/signup"
 									class="font-bold text-primary hover:text-primary-dark no-underline"
@@ -123,11 +123,11 @@ function Login() {
 								>
 									Forgot Password?
 								</A>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
 		</>
 	);
 }

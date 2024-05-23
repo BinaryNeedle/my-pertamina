@@ -13,11 +13,12 @@ toDataURL("2b2ee9d8c90760c616eb9eef56434dd9d323b6ed449204fdc6282b54ebc5d8ff") //
 function Dashboard() {
 	return (
 		<>
-			<div class="container mx-auto px-8 mt-8">
-				<div class="bg-white drop-shadow-lg rounded-lg h-screen">
+			<section class="container mx-auto px-8 mt-8">
+				<section class="bg-white drop-shadow-lg rounded-lg">
 					<img src={qr()}></img>
-				</div>
-			</div>
+				</section>
+				<section></section>
+			</section>
 		</>
 	);
 }

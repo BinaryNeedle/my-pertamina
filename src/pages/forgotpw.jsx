@@ -6,25 +6,27 @@ document.getElementById("footer").style.display = "none";
 function ForgotPw() {
 	return (
 		<>
-			<div class="container mx-auto p-8 flex items-center h-screen">
-				<div class="mx-auto max-w-md">
+			<section class="container mx-auto p-8 flex items-center h-screen">
+				<section class="mx-auto max-w-md">
 					{/* <!-- ... --> */}
 
-					<div class="bg-gradient-to-b from-[#edf2f4] from-10% via-white via-30% to-white to-60% rounded-lg shadow p-7 border-4 border-x-white border-b-white border-t-[#edf2f4]">
+					<section class="bg-gradient-to-b from-[#edf2f4] from-10% via-white via-30% to-white to-60% rounded-lg shadow p-7 border-4 border-x-white border-b-white border-t-[#edf2f4]">
 						<span className="flex justify-center pt-8">
 							<img src={pertaminaLogo} alt="Pertamina Logo" className="w-16" />
 						</span>
-						<div class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
+						<section class="pt-8 font-bold text-black text-center text-xl tracking-widest uppercase">
 							Welcome!
-						</div>
-						<div class="text-center mb-5 mt-3">Please enter your email.</div>
-						<div class="text-center mt-4 flex items-center">
-							<div class="border-t border-4 border-gray-400 flex-grow"></div>
-						</div>
+						</section>
+						<section class="text-center mb-5 mt-3">
+							Please enter your email.
+						</section>
+						<section class="text-center mt-4 flex items-center">
+							<section class="border-t border-4 border-gray-400 flex-grow"></section>
+						</section>
 						<form class="bg-grey-lightest py-3">
 							{/* {{ csrf_field() }} */}
 
-							<div class="mb-6">
+							<section class="mb-6">
 								<label htmlFor="email">E-Mail Address</label>
 								<input
 									class="border w-full p-3 rounded-lg"
@@ -33,16 +35,16 @@ function ForgotPw() {
 									id="email"
 									placeholder="E-Mail"
 								/>
-							</div>
-							<div class="flex">
+							</section>
+							<section class="flex">
 								<button class="bg-black rounded-lg hover:bg-primary-dark w-full p-4 text-sm text-white uppercase font-bold tracking-wider">
 									Submit
 								</button>
-							</div>
+							</section>
 						</form>
 
-						<div class="border-t px-1 py-6">
-							<div class="flex justify-between">
+						<section class="border-t px-1 py-6">
+							<section class="flex justify-between">
 								<A
 									href="/signup"
 									class="font-bold text-primary hover:text-primary-dark no-underline"
@@ -56,11 +58,11 @@ function ForgotPw() {
 								>
 									Already have an account?
 								</A>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
 		</>
 	);
 }
