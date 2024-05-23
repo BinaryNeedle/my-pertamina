@@ -4,8 +4,8 @@ import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
 function ForgotPw() {
 	return (
 		<>
-			<div class="container mx-auto p-8 flex items-center">
-				<div class="mx-auto max-w-md"></div>
+			<div class="container mx-auto px-8 mt-8">
+				<div class="bg-white drop-shadow-lg rounded-lg h-screen"></div>
 			</div>
 		</>
 	);
