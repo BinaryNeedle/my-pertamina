@@ -3,16 +3,17 @@ import "/src/assets/css/App.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
-const isNotFound = window.location.pathname === "/404";
-
 function MainLayout(props) {
-	return (
-		<>
-			<Navbar />
-			{props.children}
-			<Footer />
-		</>
-	);
+  const showNavbar = props.showNavbar;
+  const showFooter = props.showFooter;
+
+  return (
+    <>
+      {showNavbar && <Navbar />}
+      <div className="main-content">{props.children}</div>
+      {showFooter && <Footer />}
+    </>
+  );
 }
 
 export default MainLayout;
