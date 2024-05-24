@@ -10,6 +10,8 @@ const ForgotPw = lazy(() => import("./pages/forgotpw"));
 const ResetPw = lazy(() => import("./pages/resetpw"));
 const Dashboard = lazy(() => import("./pages/dashboard"));
 const Testing = lazy(() => import("./pages/testing"));
+const Profile = lazy(() => import("./pages/profile"));
+const History = lazy(() => import("./pages/history"));
 const NotFound = lazy(() => import("./pages/notFound"));
 
 const isNotFound = window.location.pathname === "/404";
@@ -22,6 +24,8 @@ function App() {
 			<Route path="/forgotpw" component={ForgotPw} />
 			<Route path="/resetpw" component={ResetPw} />
 			<Route path="/dashboard" component={Dashboard} />
+			<Route path="/profile" component={Profile} />
+			<Route path="/history" component={History} />
 			<Route path="/testing" component={Testing} />
 			<Route path="/*404" component={NotFound} />
 		</Router>
