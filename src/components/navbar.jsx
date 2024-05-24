@@ -8,7 +8,7 @@ function Navbar() {
 		<>
 			<nav
 				id="navbar"
-				className="container mx-auto mt-3 py-2 bg-white drop-shadow-lg rounded-lg flex justify-between"
+				className="container mx-auto mt-3 py-2 bg-white shadow-lg rounded-lg flex justify-between"
 			>
 				<section className="flex">
 					<A href="/dashboard" class="flex items-center ms-5">
