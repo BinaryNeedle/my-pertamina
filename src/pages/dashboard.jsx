@@ -9,7 +9,7 @@ function Dashboard() {
 	const [qr, setqr] = createSignal("");
 	QRCode.toDataURL(
 		"2b2ee9d8c90760c616eb9eef56434dd9d323b6ed449204fdc6282b54ebc5d8ff",
-		{ margin: 0, width: 280 }
+		{ margin: 0, width: 280, errorCorrectionLevel: "H", version: 10 }
 	) //example of sha256 encryption(Date+iduser+idpayment+onetimecode)
 		.then(setqr)
 		.catch((err) => {
