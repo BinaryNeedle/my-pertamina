@@ -109,7 +109,7 @@ function Dashboard() {
 											Nominal
 										</th>
 										<th scope="col" className="px-6 py-3">
-											Jadwal Transaksi
+											Tanggal Transaksi
 										</th>
 									</tr>
 								</thead>
