@@ -2,7 +2,7 @@ import MainLayout from "../layouts/main";
 import { onMount } from "solid-js";
 import { Chart, Title, Tooltip, Legend, Colors } from "chart.js";
 import { Line } from "solid-chartjs";
-function NotFound() {
+function History() {
 	onMount(() => {
 		Chart.register(Title, Tooltip, Legend, Colors);
 	});
@@ -160,4 +160,4 @@ function NotFound() {
 	);
 }
 
-export default NotFound;
+export default History;
