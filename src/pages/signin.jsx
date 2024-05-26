@@ -4,7 +4,7 @@ import MainLayout from "../layouts/main";
 import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
 // remove navbar and footer display in css level
 
-function Login() {
+function Signin() {
 	return (
 		<>
 			<MainLayout showNavbar={false} showFooter={false}>
@@ -138,4 +138,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default Signin;
