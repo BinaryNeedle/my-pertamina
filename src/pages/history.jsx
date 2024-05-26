@@ -1,7 +1,9 @@
-import MainLayout from "../layouts/main";
-import { onMount } from "solid-js";
+import { onMount, createSignal } from "solid-js";
 import { Chart, Title, Tooltip, Legend, Colors } from "chart.js";
 import { Line } from "solid-chartjs";
+
+import MainLayout from "../layouts/main";
+
 function History() {
 	onMount(() => {
 		Chart.register(Title, Tooltip, Legend, Colors);
@@ -61,6 +63,7 @@ function History() {
 			},
 		},
 	};
+
 	return (
 		<>
 			<MainLayout showNavbar={true} showFooter={true}>
