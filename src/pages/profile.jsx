@@ -1,6 +1,6 @@
 import MainLayout from "../layouts/main";
 
-function NotFound() {
+function Profile() {
 	return (
 		<>
 			<MainLayout showNavbar={true} showFooter={true}>
@@ -10,4 +10,4 @@ function NotFound() {
 	);
 }
 
-export default NotFound;
+export default Profile;
