@@ -22,10 +22,10 @@ function Navbar() {
 							<A href="/dashboard">Dashboard</A>
 						</li>
 						<li className="px-10">
-							<A href="/profile">Profile</A>
+							<A href="/history">History</A>
 						</li>
 						<li className="px-10">
-							<A href="/history">History</A>
+							<A href="/profile">Profile</A>
 						</li>
 					</ul>
 					<section className="flex justify-center pe-5">
