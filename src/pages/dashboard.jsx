@@ -1,20 +1,11 @@
 import { createSignal } from "solid-js";
 import { A } from "@solidjs/router";
 import MainLayout from "../layouts/main";
+import QrGen from "../components/qrgen";
 
 import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
-import QRCode from "qrcode";
 
 function Dashboard() {
-	const [qr, setqr] = createSignal("");
-	QRCode.toDataURL(
-		"2b2ee9d8c90760c616eb9eef56434dd9d323b6ed449204fdc6282b54ebc5d8ff",
-		{ margin: 0, width: 280, errorCorrectionLevel: "H", version: 10 }
-	) //example of sha256 encryption(Date+iduser+idpayment+onetimecode)
-		.then(setqr)
-		.catch((err) => {
-			console.error(err);
-		});
 	const [dataCount, setDataCount] = createSignal(0);
 	// when pulling data from api, the setDataCount must be set to counting total data table
 	const [marginFooter, setMarginFooter] = createSignal("");
@@ -90,9 +81,7 @@ function Dashboard() {
 								</section>
 							</section>
 						</section> */}
-						<span className="bg-white shadow-lg rounded-lg p-5">
-							<img src={qr()}></img>
-						</span>
+						<QrGen transaction="2b2ee9d8c90760c616eb9eef56434dd9d323b6ed449204fdc6282b54ebc5d8ff" />
 					</section>
 					<section className={marginFooter()}>
 						<div className="relative overflow-x-auto shadow-md sm:rounded-lg bg-white">
