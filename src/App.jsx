@@ -4,15 +4,15 @@ import "/src/assets/css/App.css";
 
 import MainLayout from "./layouts/main";
 
-const Signin = lazy(() => import("./pages/signin"));
-const Signup = lazy(() => import("./pages/signup"));
-const ForgotPw = lazy(() => import("./pages/forgotpw"));
-const ResetPw = lazy(() => import("./pages/resetpw"));
-const Dashboard = lazy(() => import("./pages/dashboard"));
-const Testing = lazy(() => import("./pages/testing"));
-const Profile = lazy(() => import("./pages/profile"));
-const History = lazy(() => import("./pages/history"));
-const NotFound = lazy(() => import("./pages/notFound"));
+const Signin = lazy(() => import("./pages/SignIn"));
+const Signup = lazy(() => import("./pages/SignUp"));
+const ForgotPw = lazy(() => import("./pages/ForgotPw"));
+const ResetPw = lazy(() => import("./pages/ResetPw"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Testing = lazy(() => import("./pages/Testing"));
+const Profile = lazy(() => import("./pages/Profile"));
+const History = lazy(() => import("./pages/History"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const isNotFound = window.location.pathname === "/404";
 
