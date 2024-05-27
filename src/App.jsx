@@ -14,8 +14,6 @@ const Profile = lazy(() => import("./pages/Profile"));
 const History = lazy(() => import("./pages/History"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-const isNotFound = window.location.pathname === "/404";
-
 function App() {
 	return (
 		<Router root={MainLayout}>
