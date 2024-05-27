@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 import { A } from "@solidjs/router";
 import MainLayout from "../layouts/main";
-import QrGen from "../components/qrgen";
+import QrGen from "../components/QrGen";
 
 import pertaminaLogo from "/src/assets/img/pertamina_logo.png";
 
