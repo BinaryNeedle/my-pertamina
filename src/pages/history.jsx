@@ -1,69 +1,9 @@
-import { onMount, createSignal } from "solid-js";
-import { Chart, Title, Tooltip, Legend, Colors } from "chart.js";
-import { Line } from "solid-chartjs";
+import { createSignal } from "solid-js";
 
 import MainLayout from "../layouts/main";
+import HistoryChart from "../components/HistoryChart";
 
 function History() {
-	onMount(() => {
-		Chart.register(Title, Tooltip, Legend, Colors);
-	});
-
-	const chartData = {
-		labels: [
-			"Januari",
-			"Februari",
-			"Maret",
-			"April",
-			"Mei",
-			"Juni",
-			"Juli",
-			"Agustus",
-			"September",
-			"Oktober",
-			"November",
-			"Desember",
-		],
-		datasets: [
-			{
-				label: "Total Fuel",
-				data: [4, 6, 3, 5, 3, 3, 7, 8, 10, 8, 9, 10],
-				lineTension: 0.4,
-			},
-		],
-	};
-	const chartOptions = {
-		responsive: true,
-		plugins: {
-			title: {
-				display: true,
-				text: "The total fuel consumption in 2023.",
-			},
-		},
-		maintainAspectRatio: false,
-		interaction: {
-			intersect: false,
-		},
-		scales: {
-			x: {
-				display: true,
-				title: {
-					display: true,
-					text: "Month",
-				},
-			},
-			y: {
-				display: true,
-				title: {
-					display: true,
-					text: "Total Fuel",
-				},
-				suggestedMin: 0,
-				suggestedMax: 5,
-			},
-		},
-	};
-
 	const [dataCount, setDataCount] = createSignal(0);
 	// when pulling data from api, the setDataCount must be set to counting total data table
 	const [marginFooter, setMarginFooter] = createSignal("");
@@ -77,14 +17,23 @@ function History() {
 		<>
 			<MainLayout showNavbar={true} showFooter={true}>
 				<section class="container mx-auto px-8 mt-8">
-					<span className="bg-white">
-						<Line
-							data={chartData}
-							options={chartOptions}
-							width={400}
-							height={400}
-						/>
-					</span>
+					<HistoryChart
+						chartMonth={[
+							"Januari",
+							"Februari",
+							"Maret",
+							"April",
+							"Mei",
+							"Juni",
+							"Juli",
+							"Agustus",
+							"September",
+							"Oktober",
+							"November",
+							"Desember",
+						]}
+						chartFuel={[4, 6, 3, 5, 3, 3, 7, 8, 10, 8, 9, 10]}
+					/>
 					<section className={marginFooter()}>
 						<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
 							<table class="w-full text-sm text-left rtl:text-right text-gray-500">
