@@ -1,3 +1,4 @@
+<h1 align="center" style="font-weight: bold;"> DISCONTINUE</h1>
 <h1 align="center" style="font-weight: bold;">my-pertamina 💻</h1>
 
 <p align="center">
